@@ -3,6 +3,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from '@expo/vector-icons';
 
+
+import ChatScreen from './screens/ChatScreen';
+import CycleTrackerScreen from './screens/CycleTrackerScreen';
+import NutritionTrackerScreen from './screens/NutritionTrackerScreen';
+
 import HomeScreen from "./screens/HomeScreen";
 import DetectedInjuryScreen from "./screens/DetectedInjuryScreen";
 import InjuryDetailScreen from "./screens/InjuryDetailScreen";
@@ -77,6 +82,27 @@ export default function App() {
         <Stack.Screen name="KitDetail" component={KitDetailScreen} />
         <Stack.Screen name="ItemDetail" component={ItemDetailScreen} />
         <Stack.Screen name="Chatbot" component={ChatbotScreen} />
+        <Stack.Screen
+  name="Home"
+  component={HomeScreen}
+  options={{ headerShown: false }}
+/>
+<Stack.Screen
+  name="Chat"
+  component={ChatScreen}
+  options={{ headerShown: false }}
+/>
+<Stack.Screen
+  name="CycleTracker"
+  component={CycleTrackerScreen}
+  options={{ headerShown: false }}
+/>
+<Stack.Screen
+  name="NutritionTracker"
+  component={NutritionTrackerScreen}
+  options={{ headerShown: false }}
+/>
+
 
       </Stack.Navigator>
     </NavigationContainer>
