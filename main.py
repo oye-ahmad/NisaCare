@@ -525,7 +525,7 @@ init_nisacare_db()
 
 @app.post("/cycle/log")
 def log_cycle(data: CycleLogRequest):
-    conn = sqlite3.connect("nisacare.db", check_same_thread=False)
+    conn = sqlite3.connect("firstaid.db", check_same_thread=False)
     c = conn.cursor()
     try:
         c.execute("""
@@ -544,7 +544,7 @@ def log_cycle(data: CycleLogRequest):
 
 @app.get("/cycle/history/{user_id}")
 def get_cycle_history(user_id: str):
-    conn = sqlite3.connect("nisacare.db", check_same_thread=False)
+    conn = sqlite3.connect("firstaid.db", check_same_thread=False)
     conn.row_factory = sqlite3.Row
     c = conn.cursor()
     try:
@@ -566,7 +566,7 @@ def predict_next_cycle(user_id: str):
     Simple average-based prediction.
     Returns predicted next start date and average cycle length.
     """
-    conn = sqlite3.connect("nisacare.db", check_same_thread=False)
+    conn = sqlite3.connect("firstaid.db", check_same_thread=False)
     conn.row_factory = sqlite3.Row
     c = conn.cursor()
     try:
@@ -635,7 +635,7 @@ def get_food_list():
 
 @app.post("/nutrition/log")
 def log_nutrition(data: NutritionLogRequest):
-    conn = sqlite3.connect("nisacare.db", check_same_thread=False)
+    conn = sqlite3.connect("firstaid.db", check_same_thread=False)
     c = conn.cursor()
     try:
         # Auto-calculate from food_items if iron/vitamin_d not provided
@@ -685,7 +685,7 @@ def log_nutrition(data: NutritionLogRequest):
 
 @app.get("/nutrition/history/{user_id}")
 def get_nutrition_history(user_id: str):
-    conn = sqlite3.connect("nisacare.db", check_same_thread=False)
+    conn = sqlite3.connect("firstaid.db", check_same_thread=False)
     conn.row_factory = sqlite3.Row
     c = conn.cursor()
     try:

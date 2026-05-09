@@ -23,10 +23,10 @@ const PRIMARY = '#D4537E';
 
 // Anonymous user ID — stored locally, never sent to any server with identity
 async function getAnonymousUserId() {
-  let uid = await AsyncStorage.getItem('nisacare_uid');
+  let uid = await AsyncStorage.getItem('firstaid_uid');
   if (!uid) {
     uid = 'user_' + Math.random().toString(36).substring(2, 10);
-    await AsyncStorage.setItem('nisacare_uid', uid);
+    await AsyncStorage.setItem('firstaid_uid', uid);
   }
   return uid;
 }
@@ -332,7 +332,7 @@ const styles = StyleSheet.create({
                   padding: 14, backgroundColor: PRIMARY },
   backBtn:      { padding: 4 },
   backArrow:    { color: '#fff', fontSize: 20, fontWeight: '600' },
-  headerTitle:  { color: '#fff', fontSize: 17, fontWeight: '700' },
+  headerTitle:  { color: '#fff', fontSize: 17, fontWeight: '700', marginTop: 20 },
   scroll:       { padding: 16, paddingBottom: 40 },
 
   predCard:     { backgroundColor: '#FFF0F5', borderRadius: 14, padding: 18, marginBottom: 16,

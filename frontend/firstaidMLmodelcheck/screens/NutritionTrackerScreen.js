@@ -286,7 +286,7 @@ const styles = StyleSheet.create({
                   padding: 14, backgroundColor: '#185FA5' },
   backBtn:      { padding: 4 },
   backArrow:    { color: '#fff', fontSize: 20, fontWeight: '600' },
-  headerTitle:  { color: '#fff', fontSize: 17, fontWeight: '700' },
+  headerTitle:  { color: '#fff', fontSize: 17, fontWeight: '700', marginTop: 20 },
   scroll:       { padding: 16, paddingBottom: 40 },
 
   infoCard:     { backgroundColor: '#fff', borderRadius: 14, padding: 16, marginBottom: 16,

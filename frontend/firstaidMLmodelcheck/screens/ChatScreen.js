@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
   header:        { flexDirection: 'row', alignItems: 'center', padding: 14, paddingTop: 16 },
   backBtn:       { marginRight: 10, padding: 4 },
   backArrow:     { color: '#fff', fontSize: 20, fontWeight: '600' },
-  headerTitle:   { color: '#fff', fontSize: 16, fontWeight: '700', textAlign: 'right' },
+  headerTitle:   { color: '#fff', fontSize: 16, fontWeight: '700', textAlign: 'right' , marginTop: 20 },
   headerSub:     { color: 'rgba(255,255,255,0.8)', fontSize: 11, textAlign: 'right', marginTop: 2 },
 
   messageList:   { padding: 12, paddingBottom: 8 },

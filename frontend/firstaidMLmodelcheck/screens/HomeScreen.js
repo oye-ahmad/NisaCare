@@ -477,11 +477,11 @@ export default function HomeScreen({ navigation }) {
         </View>
 
         {/* Privacy note */}
-        <View style={styles.privacyNote}>
+        {/* <View style={styles.privacyNote}>
           <Text style={styles.privacyText}>
             🔒 NisaCare میں آپ کی شناخت محفوظ ہے — کوئی لاگ ان نہیں، کوئی نام نہیں، کوئی ریکارڈ باہر نہیں جاتا۔
           </Text>
-        </View>
+        </View> */}
 
         {/* Emergency numbers */}
         <View style={styles.emergencyCard}>
@@ -499,7 +499,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   safe:           { flex: 1, backgroundColor: '#FFF5F8' },
   header:         { backgroundColor: '#C03870', padding: 20, paddingBottom: 24 },
-  appName:        { color: '#fff', fontSize: 26, fontWeight: '800', textAlign: 'right' },
+  appName:        { color: '#fff', fontSize: 26, fontWeight: '800', textAlign: 'right', marginTop:10 },
   tagline:        { color: 'rgba(255,255,255,0.85)', fontSize: 13, textAlign: 'right', marginTop: 4 },
   scroll:         { padding: 16, paddingBottom: 40 },
 
