@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 // ── Change this to your backend URL ─────────────────
-const API_BASE_URL = 'http://10.8.56.117:8000';
+const API_BASE_URL = 'https://oye-ahmad1657-nisacare.hf.space';
 // ────────────────────────────────────────────────────
 
 // Force RTL for Urdu text

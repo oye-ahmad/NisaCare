@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_BASE_URL = 'http://10.8.56.117:8000';
+const API_BASE_URL = 'https://oye-ahmad1657-nisacare.hf.space';
 const IRON_COLOR   = '#D85A30';
 const VITD_COLOR   = '#185FA5';
 

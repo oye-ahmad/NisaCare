@@ -4,7 +4,7 @@ import {
   StyleSheet, SafeAreaView, StatusBar,
 } from 'react-native';
 
-const API_BASE_URL = 'http://10.8.56.117:8000';
+const API_BASE_URL = 'https://oye-ahmad1657-nisacare.hf.space';
 
 const TOPIC_ICONS = {
   menstrual:  '🌸',

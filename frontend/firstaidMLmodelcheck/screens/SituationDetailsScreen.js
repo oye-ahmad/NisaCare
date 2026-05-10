@@ -9,7 +9,7 @@ import axios from "axios";
 import { Ionicons } from '@expo/vector-icons';
 
 // ── Change to your backend IP ──────────────────────────────────────
-const API_BASE_URL = 'http://10.8.56.117:8000';
+const API_BASE_URL = 'https://oye-ahmad1657-nisacare.hf.space';
 // ──────────────────────────────────────────────────────────────────
 
 // Map situation title → chatbot topic for "Ask AI" button
