@@ -1,13 +1,3 @@
-/**
- * NutritionTrackerScreen.js  —  NisaCare Iron & Vitamin D Tracker
- *
- * HOW TO USE:
- *   1. Copy to your frontend/screens/ folder
- *   2. Add to navigation:
- *        import NutritionTrackerScreen from './screens/NutritionTrackerScreen';
- *        <Stack.Screen name="NutritionTracker" component={NutritionTrackerScreen} />
- *   3. Change API_BASE_URL below to your backend IP
- */
 
 import React, { useState, useEffect } from 'react';
 import {
@@ -16,7 +6,7 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_BASE_URL = 'http://10.8.56.93:8000';
+const API_BASE_URL = 'http://10.8.56.117:8000';
 const IRON_COLOR   = '#D85A30';
 const VITD_COLOR   = '#185FA5';
 
@@ -284,7 +274,7 @@ const styles = StyleSheet.create({
   safe:         { flex: 1, backgroundColor: '#F8FBFF' },
   header:       { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
                   padding: 14, backgroundColor: '#185FA5' },
-  backBtn:      { padding: 4 },
+  backBtn:      { padding: 4 , marginTop: 20},
   backArrow:    { color: '#fff', fontSize: 20, fontWeight: '600' },
   headerTitle:  { color: '#fff', fontSize: 17, fontWeight: '700', marginTop: 20 },
   scroll:       { padding: 16, paddingBottom: 40 },

@@ -1,16 +1,3 @@
-/**
- * ChatScreen.js  —  NisaCare Anonymous Urdu Chatbot
- *
- * HOW TO USE:
- *   1. Copy this file to your frontend/screens/ folder
- *   2. In your navigation file, add:
- *        import ChatScreen from './screens/ChatScreen';
- *        <Stack.Screen name="Chat" component={ChatScreen} />
- *   3. Navigate to it with:
- *        navigation.navigate('Chat', { topic: 'menstrual' })
- *      OR just 'Chat' without topic for general chat
- *   4. Change API_BASE_URL below to your backend IP/URL
- */
 
 import React, { useState, useRef, useCallback } from 'react';
 import {
@@ -20,7 +7,7 @@ import {
 } from 'react-native';
 
 // ── Change this to your backend URL ─────────────────
-const API_BASE_URL = 'http://10.8.56.93:8000';
+const API_BASE_URL = 'http://10.8.56.117:8000';
 // ────────────────────────────────────────────────────
 
 // Force RTL for Urdu text
@@ -214,7 +201,7 @@ export default function ChatScreen({ route, navigation }) {
 const styles = StyleSheet.create({
   safe:          { flex: 1, backgroundColor: '#FAFAFA' },
   header:        { flexDirection: 'row', alignItems: 'center', padding: 14, paddingTop: 16 },
-  backBtn:       { marginRight: 10, padding: 4 },
+  backBtn:       { marginRight: 10, padding: 4 , marginTop: 20},
   backArrow:     { color: '#fff', fontSize: 20, fontWeight: '600' },
   headerTitle:   { color: '#fff', fontSize: 16, fontWeight: '700', textAlign: 'right' , marginTop: 20 },
   headerSub:     { color: 'rgba(255,255,255,0.8)', fontSize: 11, textAlign: 'right', marginTop: 2 },

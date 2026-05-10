@@ -5,17 +5,16 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 import ChatScreen from './screens/ChatScreen';
+import BreastCancerDetailScreen from './screens/BreastCancerDetailScreen';
+import BreastCancerScreen from './screens/BreastCancerScreen';
 import CycleTrackerScreen from './screens/CycleTrackerScreen';
 import NutritionTrackerScreen from './screens/NutritionTrackerScreen';
 
 import HomeScreen from "./screens/HomeScreen";
-import DetectedInjuryScreen from "./screens/DetectedInjuryScreen";
-import InjuryDetailScreen from "./screens/InjuryDetailScreen";
+
 import SituationsScreen from "./screens/SituationsScreen";
 import SituationDetailsScreen from "./screens/SituationDetailsScreen";
-import KitInfoScreen from "./screens/KitInfoScreen";
-import KitDetailScreen from "./screens/KitDetailScreen";
-import ItemDetailScreen from "./screens/ItemDetailScreen";
+
 import ChatbotScreen from "./screens/ChatbotScreen";
 
 const Stack = createNativeStackNavigator();
@@ -63,8 +62,8 @@ function MainTabs() {
       />
       <Tab.Screen
         name="KitInfo"
-        component={KitInfoScreen}
-        options={{ title: 'Kit Info' }}
+        component={BreastCancerScreen}
+        options={{ title: 'Breast Cancer' }}
       />
     </Tab.Navigator>
   );
@@ -76,12 +75,11 @@ export default function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
 
         <Stack.Screen name="MainTabs" component={MainTabs} />
-        <Stack.Screen name="DetectedInjury" component={DetectedInjuryScreen} />
-        <Stack.Screen name="InjuryDetail" component={InjuryDetailScreen} />
+        <Stack.Screen name="BreastCancerDetail" component={BreastCancerDetailScreen} options={{ headerShown: false }} />
         <Stack.Screen name="SituationDetails" component={SituationDetailsScreen} />
-        <Stack.Screen name="KitDetail" component={KitDetailScreen} />
-        <Stack.Screen name="ItemDetail" component={ItemDetailScreen} />
+        <Stack.Screen name="KitInfo" component={BreastCancerScreen} options={{ headerShown: false }} />
         <Stack.Screen name="Chatbot" component={ChatbotScreen} />
+
         <Stack.Screen
   name="Home"
   component={HomeScreen}
