@@ -7,6 +7,8 @@ With NisaCare, Girls opens her phone and types in Urdu: (My periods are very pai
 Girls can also log thier cycle, track her nutrition (iron and vitamin D), and learn about breast cancer self‑examination – all completely anonymously. No login required, no data shared.
 
 NisaCare helps women take charge of their health privately, affordably, and in their own language. It reduces misinformation, breaks taboos, and empowers women to seek timely medical help.
+ 
+Women Empowerment 
 
 
 
